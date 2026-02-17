@@ -16,7 +16,7 @@ import {
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://localprocanvas.onrender.com';
 
 function Login() {
   const navigate = useNavigate();
