@@ -170,7 +170,7 @@ function Register() {
       localStorage.setItem('localpro_token', loginPayload.access_token);
       localStorage.setItem('localpro_user_id', loginPayload.user_id);
       localStorage.setItem('localpro_user_email', formData.email);
-      navigate('/portfolio');
+      navigate('/portfolios');
     } catch (error) {
       setErrors((prev) => ({ ...prev, submit: error.message || 'Registration failed' }));
     } finally {

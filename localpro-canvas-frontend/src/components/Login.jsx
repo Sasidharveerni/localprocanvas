@@ -83,7 +83,7 @@ function Login() {
       localStorage.setItem('localpro_token', payload.access_token);
       localStorage.setItem('localpro_user_id', payload.user_id);
       localStorage.setItem('localpro_user_email', formData.email);
-      navigate('/portfolio');
+      navigate('/portfolios');
     } catch (error) {
       setErrors((prev) => ({ ...prev, submit: error.message || 'Login failed' }));
     } finally {
