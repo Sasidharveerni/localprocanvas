@@ -59,7 +59,7 @@ def _normalize_portfolio_doc(portfolio: dict) -> dict:
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173", "http://localhost:5174"],  # React/Vite dev servers
+    allow_origins=["http://localhost:3000", "http://localhost:5173", "http://localhost:5174", "https://localprocanvas-six.vercel.app"],  # React/Vite dev servers
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
